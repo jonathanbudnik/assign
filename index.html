@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="screen.css">
+		<title>
+			Assignment 1
+		</title>
+	</head>
+
+	<body>
+		<h1>Assignment 1</h1>
+
+		<h2 id=lab1title>Lab 1</h2>
+		<nav id=titles>
+			<a href="#l1q1">Question 1</a>
+			<a href="#l1q2">Question 2</a>
+			<a href="#l1q3">Question 3</a>
+			<a href="#l1q4">Question 4</a>
+			<a href="#l1q5">Question 5</a>
+			<a href="#l1q6">Question 6</a>
+			<a href="#l1q7">Question 7</a>
+			<a href="#l1q8">Question 8</a>
+			<a href="#l1q9">Question 9</a>
+			<a href="#l1q10">Question 10</a>
+			<a href="#l1q11">Question 11</a>
+			<a href="#lab2title">Lab 2</a>
+		</nav>
+
+		<form id="bigForm" action="http://wt.ops.few.vu.nl/api/1c4e8e91" method="post">
+
+			<table id="productTable">
+				<caption>Products</caption>
+				<tr>
+					<th>Name</th><th>Category</th><th>Amount</th><th>Location</th><th>Date</th>
+				</tr>
+
+				<tr>
+					<td>Banana</td><td>Fruit</td><td>10</td><td>Amsterdam</td><td>2015-11-21</td>
+				</tr>
+
+				<tr>
+					<td>Cheese</td><td>Dairy</td><td>120</td><td>Amsterdam</td><td>2016-11-21</td>
+				</tr>
+
+				<tr>
+					<td>Soap</td><td>Cleaning</td><td>6</td><td>Moskow</td><td>2016-07-17</td>
+				</tr>
+
+				<tr>
+					<td><input type="text" name="name" required/></td><td><input type="text" name="category"/></td><td><input type="text" name="amount" required/></td><td><input type="text" name="location"/></td><td><input type="text" name="date"/></td>
+				</tr>
+			</table>
+			<input id="submitButton1" type="submit" value="Submit">
+		</form>
+
+		<form id="smallForm" action="http://wt.ops.few.vu.nl/api/1c4e8e91" method="post">
+
+			<table id="productTable">
+				<caption>Products</caption>
+				<tr>
+					<th>Name</th><th>Ammount</th>
+				</tr>
+
+				<tr>
+					<td>Banana</td><td>10</td>
+				</tr>
+
+				<tr>
+					<td>Cheese</td><td>120</td>
+				</tr>
+
+				<tr>
+					<td>Soap</td><td>6</td>
+				</tr>
+
+				<tr>
+					<td><input type="text" name="name" required/></td><td><input type="text" name="amount" required/></td><td><input type="hidden" name="category"/></td><td><input type="hidden" name="location"/></td><td><input type="hidden" name="date"/></td>
+				</tr>
+			</table>
+			<input id="submitButton2" type="submit" value="OK">
+		</form>
+
+
+
+
+		<ul>
+			<li>
+				<section id=l1q1>
+					<h3>Question 1</h3>
+
+					<p>The difference between both recomendation was basically the aiming that each one of them gave. While W3C wanted their language to be more oriented to "feelings" and "emotions", WHATWG wanted to create some more universal and versatil language free for everyone.</p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l1q2>
+					<h3>Question 2</h3>
+
+					<p>The Internet is a massive network of networks, a networking 	infrastructure. It connects millions of computers together globally, forming a network in which any computer can communicate with any other computer as long as they are both connected to the Internet.</p>
+	
+					<p>The World Wide Web, or simply Web, is a way of accessing information over the medium of the Internet. It is an information-sharing model that is built on top of the Internet. The Web uses the HTTP protocol, only one of the languages spoken over the Internet, to transmit data.</p	>
+	
+					<p>We can assert that The Web is just a portion of the Internet: The Web is just one of the ways that information can be disseminated over the Internet. For example, The Internet is also used for email, which relies on SMTP, Usenet news groups, instant messaging and FTP.</p>	
+	
+					<p>SOURCE: <a href="http://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp">http://www.webopedia.com/DidYouKnow/Internet/	Web_vs_Internet.asp</a></p>
+				</section>
+			</li>
+			
+			<li>
+				<section id=l1q3>
+					<h3>Question 3</h3>
+
+					<p>The main goal of The Web is simplify sharing research results over the internet. To accomplish that, Tim Berners-Lee (the web inventor) needed to determine how the documents were going to be represented, where were they going to be located and how they were going to communicate. For each of them he created a different protocol.</p>
+	
+					<h4>Document representation: HTML.</h4>
+					<p>It is a way to organize the different elements of a Website through the implementation of different HTML Element, each of them represented by different marks. Each mark can display images, links or simply text, what helps the document keep organize. The HTML 	documents follow a Tree order, primary reason why it is so easy to read them and analyze them.</p>
+	
+					<h4>Location of the documents: <abbr title="Uniform Resource Locator">URL</abbr>.</h4>
+					<p>Is a reference (an address) to a resource on the Internet.</p>
+					<figure id=imageUrl>
+						<img src="http://www.vozidea.com/wp-content/uploads/2013/11/estructura-de-url.png" alt="URL composition and parts">
+						<figcaption>URL composition and parts</figcaption>
+					</figure>
+	
+					<h4>Communication: HTTP.</h4>
+					<p>Normally implemented over a TCP connection. The typical browser-server interaction is:</p>
+
+					<ol>
+						<li>
+							User enters Web address in browser
+						</li>
+						<li>
+							Browser uses DNS to locate IP address
+						</li>
+						<li>
+							Browser opens TCP connection to server
+						</li>
+						<li>
+							Browser sends HTTP request over connection
+						</li>
+						<li>
+							Server sends HTTP response to browser over connection
+						</li>
+						<li>
+							Browser displays body of response in the browser
+						</li>
+					</ol>
+	
+					<p>SOURCE:  Class 1</p>
+				</section>
+			</li>
+			
+			<li>
+				<section id=l1q4>
+					<h3>Question 4</h3>
+
+					<p>When we create a simple "Hello World" HTML document using Microsoft 	Word, it created a document much more complicated that the typical "Hello World" we used to create using a simple text editor. Despite there are a lot of similaties, we can noticed that there are a lot of marks inside de HTML created by word that are not present in the other document.</p>
+
+					<p>In the document created by Word we can see a lot of "meta 	information" (information that is not render by the web browser but gives more information about the document, like keywords or the program where the document was created).</p>
+
+					<p>We can also see that this document includes style information in CSS. If we created a document using a text editor all the stylesheet must be added by ourself.</p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l1q5>
+					<h3>Question 5</h3>
+
+					<table id=protocolTable>
+						<caption>Protocols</caption>
+						<tr>
+							<td>Protocol name</td><td>HTTP</td><td>SSH</td><td>FTP</td>
+						</tr>
+
+						<tr>
+							<td>Port number</td><td>80</td><td>22</td><td>21</td>
+						</tr>
+
+						<tr class=visible>
+							<td>Description</td><td>The <abbr title="Hypertext Transfer Protocol">HTTP</abbr> is an application-level protocol for distributed, collaborative, hypermedia information systems.</td><td>The <abbr title="Secure Shell">SSH</abbr> Protocol is a protocol for secure remote login and other secure network services over an insecure network.</td><td>The <abbr title="File Transfer Protocol">FTP</abbr> is a standard network protocol used to transfer computer files between a client and server on a computer network.</td>
+						</tr>
+
+						<tr>
+							<td>Authoritative sourse</td><td><abbr title="World Wide Web Consortium">W3C</abbr></td><td><abbr title="The Internet Engineering Task Force">IEFT</abbr></td><td><abbr title="The Internet Engineering Task Force">IEFT</abbr></td>
+						</tr>
+					</table>
+				</section>
+			</li>
+			
+			<li>
+				<section id=l1q6>
+					<h3>Question 6</h3>
+
+					<p>They may look the same to humans, but the web crawlers or bots see something quite different. When a search engine spiders and analyzes a page, text in &lt;strong&gt; tags is considered important. Text in &lt;b&gt; tags is not.
+					<p>Same logic applies with the &lt;em&gt; and the &lt;i&gt; when we are using italic writing.</p>
+					<p>SOURSE: <a href="http://www.html-5-tutorial.com/strong-and-b-elements.htm">http://www.html-5-tutorial.com/strong-and-b-elements.htm</a></p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l1q7>
+					<h3>Question 7</h3>
+
+					<p>They both are grouping tags that defines sections in a document but while <i>div</i> defines a section in a block-level, <i>span</i> do it in a inline level.</p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l1q8>
+					<h3>Question 8</h3>
+
+					<p>The &lt;iframe&gt; tag specifies an inline frame, which is used to embed another document within the current HTML document. They have pros and cons.</p>
+
+					<table>
+						<caption>Iframe</caption>
+						<tr>
+							<th>Pros</th><th>Cons</th>
+						</tr>
+
+						<tr>
+							<td>They give security (cross-domain policy) and isolated rectangle on screen which can be fully managed by third party content and scripting</td><td>Web search engines may have problems to index that sites correctly</td>
+						</tr>
+
+						<tr>
+							<td>Ability to keep one part of the page static whilst changing another part. For this reason frames are often used for navigation menus</td><td>You can not paste a link to one of the subpages when the URL never change</td>
+						</tr>
+
+						<tr>
+							<td>They can also help reduce bandwidth and server load, because the same content does not need to be loaded every time a new page is visited</td><td>Sometimes the accessibility of this sites are worse and some browser can even display them improperly</td>
+						</tr>
+					</table>
+	
+					<p>SOURCE: <a href="http://www.w3schools.com/tags/tag_iframe.asp">http://www.w3schools.com/tags/tag_iframe.asp</a></p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l1q9>
+					<h3>Question 9</h3>
+
+					<p>The basic idea behind CSS is to separate the structure of a document from the presentation of the document. HTML is meant for structure. It was never intended for anything else. Using CSS modularizes your websites in much the same way that programmers have been modularizing software code for year. Modular code in your website allows for greater design consistency and easier maintenance. CSS is the new standard and has been now for several years. The list of benefits using CSS is wide: Makes the document easier to maintain and update, gives greater consistency in design, has more formatting options, faster download times, it has Search engine optimization benefits and it eases of presenting different styles to different viewers.</p>
+
+					<p>SOURCE: <a href="http://vanseodesign.com/css/benefits-of-cascading-style-sheets/">http://vanseodesign.com/css/	benefits-of-cascading-style-sheets/</a></p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l1q10>
+					<h3>Question 10</h3>
+
+					<p>We thought that it will bold the emphasized word but only kept it on normal italic. For visual effects nothing happened but for the search 	engines this can be noticed.</p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l1q11>
+					<h3>Question 11</h3>
+
+					<table id =browserTable>
+						<caption>Browsers comparison (on Mac)</caption>
+						<tr>
+							<th>Safari</th><th>Chrome</th>
+						</tr>
+
+						<tr>
+							<td>Perfect integration with OSX</td><td>Not completely 	integrated to OSX</td>
+						</tr>
+
+						<tr>
+							<td>Less batery consumption</td><td>Each tab is an independent process (Less batery efficient)</td>
+						</tr>
+
+						<tr>
+							<td>Community using it is small</td><td>A lot of people using it</td>
+						</tr>
+
+						<tr>
+							<td>Plug-in offer is not so big</td><td>Enormous plug-in offer</td>
+						</tr>
+					</table>
+				</section>
+			</li>
+		</ul>
+
+		<h2 id=lab2title> Lab 2</h2>
+
+		<nav class="boldNav visible">
+			<a href="#l2q1">Question 1</a>
+			<a href="#l2q2">Question 2</a>
+			<a href="#l2q3">Question 3</a>
+			<a href="#l2q4">Question 4</a>
+			<a href="#l2q5">Question 5</a>
+			<a href="#l2q6">Question 6</a>
+			<a href="#l2q7">Question 7</a>
+			<a href="#l2q8">Question 8</a>
+			<a href="#l2q9">Question 9</a>
+			<a href="#l2q10">Question 10</a>
+			<a href="#l2q11">Question 11</a>
+			<a href="#lab1title">Lab 1</a>
+		</nav>
+
+		<ul>
+			<li>
+				<section id=l2q1>
+					<h3>Question 1</h3>
+
+					<p>This error correspond to the <q>Provide text alternatives for non-text content</q> guideline under the perceivable principle.</p>
+					<p>SOURCE: <a href="https://www.w3.org/WAI/WCAG20/glance/">https://www.w3.org/WAI/WCAG20/glance/</a></p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l2q2>
+					<h3>Question 2</h3>
+
+					<p>Running the tool on the page of the <abbr title="American Fundation for the Blind">AFB</abbr>: <a href="http://www.afb.org/default.aspx">http://www.afb.org/default.aspx</a> returned 13 errors, all of them pointing to empty links.</p> 
+					<p>This page should be very accesible especially for the blind ones. Overall, this page is well structurated regarding the heading levels and alternative text.</p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l2q3>
+					<h3>Question 3</h3>
+
+					<p>The <abbr title="Colour Contrast Check Tool">CCCT</abbr> allows to specify a foreground and a background colour and determine if they provide enough of a contrast. Throgh different tests the interface provides information about the level of contrast of your color choices, using the <em>Brightness Difference</em> and the <em>Colour Difference</em>. We tested the platform with 3 different pairs of colors. Here are the results:</p>
+					<dl>
+						<dt>Black and Yellow</dt>
+						<dd>It passed all the test. The constrast is good.</dd>
+						<dt>Yellow and Red</dt>
+						<dd>The brightness difference and the colour difference is too short. The tests fails.</dd>
+						<dt>Orange and White</dt>
+						<dd>The brightness difference and the colour difference is too short. The tests fails.</dd>
+					</dl>
+				</section>
+			</li>
+
+			<li>
+				<section id=l2q4>
+					<h3>Question 4</h3>
+
+					<p>Adapting web content to mobile devices through responsive design has two main advantages: time and money. However, there are more than technology to accomplish it. You can choose between making an Responsive app (Automatically adapt to any device) or a Native app (Need to be pre-configured to the screens from which they will be viewed). Native Apps have better loading times, users won't necessarily need an Internet connection in order to use your product and gives you better security. However, using Responsive apps is cheaper and they automatically adapt to any device. Wich one is better for you depends on your needs.</p>
+					
+					<blockquote>The differences between Responsive and Native would be like differences between a car and a motorcycle. There is no one better than the other, it is just a matter of taste and needs.</blockquote>
+
+
+				</section>
+			</li>
+
+			<li>
+				<section id=l2q5>
+					<h3>Question 5</h3>
+
+					<p>There's a lot of issues that they are trying to solve. For example, there are different ways to parse and encode all the different languages and therefore it's necesary to be able to reconstruct the sequence at it should be in each of the targeted languages.</p>
+					<p>Also, there are some languages that may be written vertically, so it's important to allow all the scripts and the text-format-tools to adapt to this way of writing. For example, the Chinese vertical justification works different than the horizontal one.</p>
+					<p>There's also problems with the languages that are written from right to left. like Arabic or Hebrew, between others. For this languages is imporant to adapt the web content to fit and have meaning correctly</p>
+					<p>One big issue is the cultural aproach. This talks about how the content should react to different ways to order the words in a phrase, the way date and time is managed and what symbols means on different cultures. In Japan, the check marks is commonly used to describe something as <em>incorrect</em>.</p>
+					<p>SOURCE: <a href="https://www.w3.org/standards/webdesign/i18n">https://www.w3.org/standards/webdesign/i18n</a></p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l2q6>
+					<h3>Question 1</h3>
+
+					<p>For the <code>http://www.few.vu.nl</code> and the <code>http://www.cs.vu.nl</code> the IP address is the same, <code>130.37.164.154</code></p>
+					<p>This information was obtained using the <em>ping</em> aproach from the Network Utility app from Mac.</p>
+					<p>This can impact in the functionality of the web server because it can recieve request from those two different webpages. In this case the server must know from where is the information comes from and has to be able to retrieve the correct response to the sender without mixig the messages.</p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l2q7>
+					<h3>Question 7</h3>
+
+					<p>There are currently two version of Internet Protocol (IP): IPv4 and a new version called IPv6. IPv6 is an evolutionary upgrade to the Internet Protocol. IPv6 will coexist with the older IPv4 for some time.</p>
+					<p>IPv4 is the most widely deployed Internet protocol used to connect devices to the Internet. IPv4 uses a 32-bit address scheme allowing for a total of 2^32 addresses (just over 4 billion addresses). With the growth of the Internet it is expected that the number of unused IPv4 addresses will eventually run out. That's why a new Internet addressing system Internet Protocol version is being deployed to fulfill the need for more Internet addresses: The IPv6.</p>
+					<p>IPv6 addresses are 128-bit IP address written in hexadecimal and separated by colons. An example IPv6 address could be written like this: <code>3ffe:1900:4545:3:200:f8ff:fe21:67cf</code>. Other technological improvements are showing below:</p>
+					<ul class=otherList>
+						<li>No more NAT</li>
+						<li>Auto-configuration</li>
+						<li>No more private address collisions</li>
+						<li>Better multicast routing</li>
+						<li>Simpler header format</li>
+						<li>Simplified, more efficient routing</li>
+						<li>True quality of service (QoS)</li>
+						<li>Built-in authentication and privacy support</li>
+						<li>Flexible options and extensions</li>
+						<li>Easier administration </li>
+					</ul>
+				</section>
+			</li>
+
+			<li>
+				<section id=l2q8>
+					<h3>Question 8</h3>
+
+					<p> <abbr title="Multipurpose Internet Mail Extensions">MIME</abbr> are two-part identifiers for file formats and format contents transmitted on the Internet. They are composed of a type, a subtype, and optional parameters.
+					<p>As an example, an HTML file might be designated <code>text/html; charset=UTF-8</code>. In this example, <code>text</code> is the type, <code>html</code> is the subtype, and <code>charset=UTF-8</code> is an optional parameter indicating the character encoding.</p>
+					<p>The official list of <abbr title="Internet Assigned Numbers Authority">IANA</abbr> is <a href="http://www.iana.org/assignments/media-types/media-types.xhtml">here</a>.</p>
+					<p>In the next table you can see the most common subtypes of type text.</p>
+					<table id=textTypeTable>
+						<caption>Common Text Subtypes</caption>
+						<tr>
+							<th>Type/Subtype</th><th>Extensions</th><th>Description</th>
+						</tr>
+
+						<tr>
+							<td><code>text/html</code></td><td><code>.htm .html</code></td><td>HTML file</td>
+						</tr>
+
+						<tr>
+							<td><code>text/plain</code></td><td><code>.txt</code></td><td>Plain text file</td>
+						</tr>
+
+						<tr>
+							<td><code>text/richtext</code></td><td><code>.rtf .rtx</code></td><td>Rich text file</td>
+						</tr>
+					</table>
+				</section>
+			</li>
+
+			<li>
+				<section id=l2q9>
+					<h3>Question 9</h3>
+
+					<p>There are other HTTP request methods as POST, PUT, DELETE, HEAD, etc. For example, one big difference between GET and POST is that for the first one the message body is blank and for the second one the message body contains the data sent to the server.</p>
+					<p>SOURCE: <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html</a></p>
+				</section>
+			</li>
+
+			<li>
+				<section id=l2q10>
+					<h3>Question 10</h3>
+
+					<p>The generated <strong>key</strong> is: <code>1c4e8e91</code></p>
+				</section>
+			</li>
+
+		</ul>
+
+	</body>
+</html>
